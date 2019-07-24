@@ -1,0 +1,261 @@
+Microsoft Windows [versão 10.0.17134.885]
+(c) 2018 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\Renomear.DESKTOP-BS0U13S>cd Desktop
+
+C:\Users\Renomear.DESKTOP-BS0U13S\Desktop>cd d401-Banco_de_Dados
+
+C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados>python -m venv ambiente_d401-bcodedados
+
+C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados>cd ambiente_d401-bcodedados
+
+C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados>Scripts\activate
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados>pip install django
+Collecting django
+  Using cached https://files.pythonhosted.org/packages/39/b0/2138c31bf13e17afc32277239da53e9dfcce27bac8cb68cf1c0123f1fdf5/Django-2.2.3-py3-none-any.whl
+Collecting pytz (from django)
+  Using cached https://files.pythonhosted.org/packages/3d/73/fe30c2daaaa0713420d0382b16fbb761409f532c56bdcc514bf7b6262bb6/pytz-2019.1-py2.py3-none-any.whl
+Collecting sqlparse (from django)
+  Using cached https://files.pythonhosted.org/packages/ef/53/900f7d2a54557c6a37886585a91336520e5539e3ae2423ff1102daf4f3a7/sqlparse-0.3.0-py2.py3-none-any.whl
+Installing collected packages: pytz, sqlparse, django
+Successfully installed django-2.2.3 pytz-2019.1 sqlparse-0.3.0
+You are using pip version 18.1, however version 19.2.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados>django-admin startproject d401-banco_de_dados
+CommandError: 'd401-banco_de_dados' is not a valid project name. Please make sure the name is a valid identifier.
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados>django-admin startproject d401(banco_de_dados)
+CommandError: 'd401(banco_de_dados)' is not a valid project name. Please make sure the name is a valid identifier.
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados>django-admin startproject d401-bcodedados
+CommandError: 'd401-bcodedados' is not a valid project name. Please make sure the name is a valid identifier.
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados>django-admin startproject d401bancodedados
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados>cd ..
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados>django-admin startproject d401bancodedados
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados>code .
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados>python manage.py runserver
+C:\Users\Renomear.DESKTOP-BS0U13S\AppData\Local\Programs\Python\Python37\python.exe: can't open file 'manage.py': [Errno 2] No such file or directory
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados>python manage.py
+C:\Users\Renomear.DESKTOP-BS0U13S\AppData\Local\Programs\Python\Python37\python.exe: can't open file 'manage.py': [Errno 2] No such file or directory
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados>cd d401bancodedados
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+July 24, 2019 - 11:01:21
+Django version 2.2.3, using settings 'd401bancodedados.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[24/Jul/2019 11:02:50] "GET / HTTP/1.1" 200 16392
+[24/Jul/2019 11:02:50] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[24/Jul/2019 11:02:50] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[24/Jul/2019 11:02:50] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[24/Jul/2019 11:02:50] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+[24/Jul/2019 11:02:50] "GET /favicon.ico HTTP/1.1" 404 1982
+[24/Jul/2019 11:03:24] "GET / HTTP/1.1" 200 16392
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados>python manage.py startapp app
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados>python manage.py makemigrations blog
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\AppData\Local\Programs\Python\Python37\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados\app\models.py", line 5, in <module>
+    class Pessoa(models.Model):
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados\app\models.py", line 7, in Pessoa
+    nome = models.CharField(max_lenght=255)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\db\models\fields\__init__.py", line 1037, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_lenght'
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados>python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\AppData\Local\Programs\Python\Python37\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados\app\models.py", line 5, in <module>
+    class Pessoa(models.Model):
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados\app\models.py", line 7, in Pessoa
+    nome = models.CharField(max_lenght=255)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\db\models\fields\__init__.py", line 1037, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_lenght'
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados>python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\base.py", line 361, in execute
+    self.check()
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\urls\resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\urls\resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\urls\resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\AppData\Local\Programs\Python\Python37\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados\d401bancodedados\urls.py", line 18
+    from home.views import app
+    ^
+IndentationError: unexpected indent
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados>python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\base.py", line 361, in execute
+    self.check()
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\management\base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\urls\resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\urls\resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\ambiente_d401-bcodedados\lib\site-packages\django\urls\resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\AppData\Local\Programs\Python\Python37\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados\d401bancodedados\urls.py", line 18, in <module>
+    from home.views import app
+ModuleNotFoundError: No module named 'home'
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados>python manage.py makemigrations
+Migrations for 'app':
+  app\migrations\0001_initial.py
+    - Create model Pessoa
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, app, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying app.0001_initial... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying sessions.0001_initial... OK
+
+(ambiente_d401-bcodedados) C:\Users\Renomear.DESKTOP-BS0U13S\Desktop\d401-Banco_de_Dados\d401bancodedados>
